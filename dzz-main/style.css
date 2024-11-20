@@ -1,0 +1,49 @@
+
+body{
+    background-color: rgb(142, 189, 71);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100px;
+    background-color: rgb(71, 161, 71);
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+    color: rgb(142, 189, 71);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#knopki{
+    margin-top: 20px;
+}
+
+.btn1, .btn2, .btn3, .btn4{
+    background-color: rgb(71, 161, 71);
+    height: 35px;  
+    width: 120px;
+    font-size: medium;
+    border: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.xdxd{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(54, 128, 54);
+}
+
+.xdxd2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(54, 128, 54);
+}
+
+.obrazek{
+    opacity: 0;
+    margin-left: 42vw;
+}

@@ -1,0 +1,132 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    height: 70px;
+}
+
+#container {
+    display: flex;
+    height: 630px;
+}
+
+#left, #right {
+    flex: 1; /* Каждый блок занимает 50% пространства */
+    padding: 20px;
+}
+
+#left {
+    background-color: white;
+}
+
+#right {
+    background-color: white;
+    border-left: 2px solid black; /* Добавляем черную линию между блоками */
+    display: flex; /* Для центрирования содержимого */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.registration-box {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок */
+.registration-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+}
+
+/* Группа ввода */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Метка */
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+/* Поля ввода */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Ховер для полей ввода */
+.input-group input:focus {
+    border-color: #555555;
+}
+
+/* Кнопка регистрации */
+button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Ховер для кнопки */
+button:hover {
+    background-color: #333333;
+}
+
+#text-area {
+    font-size: 36px; /* Увеличиваем размер текста */
+    font-family: 'Courier New', Courier, monospace; /* Шрифт для эффекта печатания */
+    white-space: nowrap; /* Предотвращаем перенос строк */
+    overflow: hidden; /* Скрываем текст, выходящий за пределы блока */
+    display: inline-block;
+    line-height: 1.5; /* Высота строки */
+    padding: 10px;
+    min-height: 100px; /* Минимальная высота блока */
+    position: relative; /* Для правильного позиционирования курсора */
+}
+
+.cursor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background-color: black;
+    animation: blink 0.7s infinite; /* Мигающий эффект */
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
